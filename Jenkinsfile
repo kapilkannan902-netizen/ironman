@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION = 'us-east-1'
-        S3_BUCKET = 'jenkins-aws-demo-2026-yourname'
+        S3_BUCKET = 'my-jenkins-12345-demo-bucket'
     }
 
     stages {
@@ -66,7 +66,7 @@ pipeline {
         }
 
         failure {
-            echo 'Deployment failed. Check Console Output.'
+            echo 'Deployment failed. Check Console Output'
         }
     }
 }
